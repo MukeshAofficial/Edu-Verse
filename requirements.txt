@@ -1,0 +1,29 @@
+Flask
+
+datetime
+
+requests
+
+base64
+
+io
+
+PIL (Pillow)
+
+textwrap
+
+docx
+
+IPython
+
+google.generativeai
+
+openai==0.28
+
+BeautifulSoup (bs4)
+
+nltk
+
+gtts
+
+youtube_transcript_api
