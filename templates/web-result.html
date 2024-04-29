@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Light gray background for the body */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000; /* Black background for the container */
+            color: #fff; /* White text color */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+        }
+
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Additional CSS for the audio button */
+        .audio-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .audio-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web summary</h1>
+        <div class="result">
+            {{ websummary }}
+        </div>
+        <!-- Audio button -->
+        <button class="audio-button" onclick="playAudio()">Play Audio</button>
+        <!-- Hidden audio element to play the generated audio -->
+        <audio id="audio" controls>
+            <source src="{{ audio_file }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        // Function to play the audio
+        function playAudio() {
+            var audioElement = document.getElementById('audio');
+            audioElement.play();
+        }
+    </script>
+</body>
+</html>

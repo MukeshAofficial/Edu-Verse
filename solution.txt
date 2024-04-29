@@ -1,0 +1,15 @@
+ 
+import pandas as pd
+
+# Create a dataframe using the dictionary
+df = pd.DataFrame({
+    "Name": ["John", "Mary", "Bob", "Alice"],
+    "Age": [20, 25, 30, 35],
+    "City": ["New York", "Boston", "Chicago", "Los Angeles"]
+})
+
+# Drop the rows with at least one NaN value
+df = df.dropna()
+
+# Print the output
+print(df)

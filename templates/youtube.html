@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Summarizer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #333333);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            color: #333333;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+
+        #summaryResult {
+            margin-top: 20px;
+            border-top: 1px solid #cccccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Summarizer</h1>
+        <form action="/summarize" method="post">
+            <label for="videoLink">Enter YouTube Video Link:</label><br>
+            <input type="text" id="videoLink" name="videoLink" required><br>
+            <button type="submit">Summarize</button>
+        </form>
+        <div id="summaryResult"></div>
+    </div>
+</body>
+</html>

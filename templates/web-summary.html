@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter URL for Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter URL for Summary</h1>
+        <form action="/web_summary" method="post">
+            <input type="url" name="url" placeholder="Enter URL" required>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+</style>
+</body>
+</html>

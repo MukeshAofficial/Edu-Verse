@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Letter,Essay,Research paper</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate document</h1>
+    <form action="/generate-letter" method="post">
+        <label for="prompt">Enter prompt:</label>
+        <input type="text" id="prompt" name="prompt">
+        <input type="submit" value="Generate Document">
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #summaryResult {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        #audioIcon {
+            width: 50px; /* Adjust this value to your desired width */
+            height: auto; /* This will maintain the aspect ratio */
+            cursor: pointer;
+        }
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Summary Result</h1>
+        <div id="summaryResult">{{ summary }}</div>
+        <div id="audioPlayer">
+            <img src="/static/audio_image.png" id="audioIcon" onclick="playAudio()">
+            <audio id="audio" controls style="display: none;">
+                <source src="{{ url_for('play_audio') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
+
+   

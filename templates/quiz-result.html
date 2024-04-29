@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #000000 0%, #666666 100%);
+            color: #ffffff;
+        }
+        h1, p {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .chart-container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        #pieChart {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Result</h1>
+    <p>Correct Answers: {{ correct_count }}</p>
+    <p>Incorrect Answers: {{ incorrect_count }}</p>
+    <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('pieChart').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Correct', 'Incorrect'],
+                datasets: [{
+                    label: '# of Answers',
+                    data: [{{ correct_count }}, {{ incorrect_count }}],
+                    backgroundColor: [
+                        'green',
+                        'red'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+</body>
+</html>

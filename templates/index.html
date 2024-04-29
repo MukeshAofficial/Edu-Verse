@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edu-Verse</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <style>
+    .feature-card {
+      @apply bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center;
+    }
+    .feature-card img {
+      @apply w-16 h-16 mb-4;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <header class="bg-black py-4 fixed w-full z-10">
+    <nav class="flex items-center justify-between px-4">
+      <div class="flex items-center">
+        <img src="/static/logo.png" alt="Edu-Verse Logo" class="h-8 mr-2">
+        <a href="#" class="font-bold text-lg">Edu-Verse</a>
+      </div>
+      <div class="flex items-center">
+        <a href="#" class="mr-4">Home</a>
+        <a href="#" class="mr-4">About</a>
+        <a href="#" class="mr-4">Features</a>
+        <a href="#" class="bg-green-500 text-black px-4 py-2 rounded-full">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="pt-20 min-h-screen flex flex-col justify-center items-center"> <!-- Add padding-top and center content vertically -->
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Edu-Verse</h1>
+      <p class="text-lg mb-8">Explore our cutting-edge features for enhanced learning and education.</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+      <!-- Web Search and Summarizer Feature -->
+      <div class="feature-card">
+        <a href="/web"><img src="/static/ai-web.jpg" alt="Web Search and Summarizer"></a>
+        <h3 class="text-xl font-bold mb-2">Web Search and Summarizer</h3>
+        <p>Perform web searches on educational topics and receive summarized results for quick and easy understanding.</p>
+      </div>
+      <!-- Latest Education News Feature -->
+      <div class="feature-card">
+        <a href="/edu"><img src="/static/news.jpg" alt="Latest Education News"></a>
+        <h3 class="text-xl font-bold mb-2">Latest Education News</h3>
+        <p>Stay updated with the latest news and developments in the education sector with summarized news updates for easier comprehension.</p>
+      </div>
+      <!-- YouTube Video Summarizer Feature -->
+      <div class="feature-card">
+        <a href="/youtube-summary"><img src="/static/youtube-summary.jpg" alt="YouTube Video Summarizer"></a>
+        <h3 class="text-xl font-bold mb-2">YouTube Video Summarizer</h3>
+        <p>Summarize educational YouTube videos to quickly extract key information and main points for efficient learning.</p>
+      </div>
+      <!-- Exam App Feature -->
+      <div class="feature-card">
+        <a href="/quiz"><img src="/static/exam.jpg" alt="Exam App"></a>
+        <h3 class="text-xl font-bold mb-2">Exam App</h3>
+        <p>Prepare for exams with interactive practice tests, quizzes, and study materials available on the Edu-Verse exam app.</p>
+      </div>
+      <!-- Project Creator Mode Feature -->
+      <div class="feature-card">
+        <a href="/codemaster"><img src="/static/ai-website.jpg" alt="Project Creator Mode"></a>
+        <h3 class="text-xl font-bold mb-2">Ai-powered-Project Creator</h3>
+        <p>Create a frontend webpage with HTML, CSS, JS automatically with AI.</p>
+      </div>
+      <!-- Quiz and Interactive Learning Feature -->
+      <div class="feature-card">
+        <a href="/transcribe"><img src="/static/transcribe.jpg" alt="Transcribe"></a> 
+        <h3 class="text-xl font-bold mb-2">Class Lecture transcribe</h3>
+        <p>Transcribe your class lecture in realtime and get the summary of the lecture.</p>
+      </div>
+      <!-- Education Chat Bot Feature -->
+      <div class="feature-card">
+        <a href="/chatbot"><img src="/static/chatbot.jpg" alt="Education Chat Bot"></a>
+        <h3 class="text-xl font-bold mb-2">Education Chat Bot</h3>
+        <p>Interact with an AI-powered chatbot designed to provide personalized educational assistance, answer queries, and offer learning recommendations.</p>
+      </div>
+      <!-- Scan and Get Answer Feature -->
+      <div class="feature-card">
+        <a href="/scan-solve"><img src="/static/scan-solve.jpg" alt="Scan and Get Answer"></a>
+        <h3 class="text-xl font-bold mb-2">Scan and Get Answer</h3>
+        <p>Scan educational materials or documents and receive instant answers, explanations, and insights using AI-powered scanning and analysis.</p>
+      </div>
+      <!-- AI Writer Feature -->
+      <div class="feature-card">
+        <a href="/ai-writer"><img src="/static/ai.png" alt="AI Writer for Essay, Letter, etc."></a>
+        <h3 class="text-xl font-bold mb-2">AI Writer for Essay, Letter, etc.</h3>
+        <p>Utilize an AI-powered writing tool to generate high-quality essays, letters, reports,emails and other educational content with ease and efficiency.</p>
+      </div>
+	 
+      <!-- Roadmap Feature -->
+      <div class="feature-card">
+        <a href="/road"><img src="/static/road.jpg" alt="Roadmap"></a>
+        <h3 class="text-xl font-bold mb-2">Roadmap</h3>
+        <p>Create and visualize your educational journey with a roadmap feature that helps plan your educational goals and milestones.</p>
+      </div>
+      <!-- Notes Summarizer Feature -->
+      <div class="feature-card">
+        <a href="/note"><img src="/static/note-summary.jpg" alt="Notes Summarizer"></a>
+        <h3 class="text-xl font-bold mb-2">Notes Summarizer</h3>
+        <p>Automatically summarize lengthy notes and study materials to help you grasp key concepts more efficiently.</p>
+      </div>
+      <!-- Study Plan Feature -->
+      
+        
+    </div>
+  </div>
+</body>
+</html>
