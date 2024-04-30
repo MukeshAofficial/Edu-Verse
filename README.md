@@ -16,3 +16,6 @@ Edu-Verse is an innovative educational platform designed to simplify learning an
 - **Roadmap**: Plan educational goals and milestones for motivation.
 - **Notes Summarizer**: Quickly summarize lengthy study materials to enhance comprehension.
 
+## WorkFlow
+![image](https://github.com/MukeshAofficial/Edu-Verse/assets/132742860/0ad25efa-c1fd-4f58-b7a5-63aec6249580)
+
